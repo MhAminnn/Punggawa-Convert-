@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Kripto to IDR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body><br><br>
+    <!-- Judul Utama di luar kotak -->
+        <img src="vecteezy_cryptocurrency-3d-illustration_11064643.png" alt="mainpage" class="crypto-iicon logoutama">
+ 
+    <!-- Kotak Container -->
+    <div class="container">
+        <!-- Judul Konversi -->
+        <h2>CONVERT KRIPTO TO IDR</h2>
+        <hr> <!-- Garis pemisah -->
+
+        <!-- Formulir Konversi -->
+        <form id="converterForm">
+            <!-- Kotak pencarian kripto -->
+            <div class="search-container">
+                <label for="cryptoSearch">Cari Kripto:</label>
+                <input type="text" id="cryptoSearch" placeholder="Contoh: Bitcoin, Ethereum, solana..." aria-label="Cari Kripto">
+                <div id="cryptoList" class="crypto-list"></div>
+            </div>
+            
+            <!-- Input jumlah kripto dan pilih mata uang -->
+            <div class="input-group">
+                <label for="cryptoAmount">Jumlah Kripto:</label>
+                <input type="number" id="cryptoAmount" step="0.00000001" placeholder="Masukkan jumlah kripto (contoh: 0.01)" required>
+                
+                <!-- Pilih mata uang -->
+                <label for="currency">Pilih Mata Uang:</label>
+                <select id="currency">
+                    <option value="IDR" selected>IDR (Rupiah)</option>
+                    <option value="USD">USD (Dolar AS)</option>
+                </select>
+            </div>
+            
+            <!-- Tombol konversi -->
+            <button type="submit">Konversi Sekarang →</button>
+        </form>
+        
+        <!-- Hasil konversi -->
+        <div id="result"></div>
+        <hr>
+
+        <!-- Riwayat Konversi -->
+        <div id="history">
+            <h3>Riwayat Konversi</h3>
+            <ul id="historyList"></ul>
+            <!-- Tombol Hapus Riwayat -->
+            <button id="clearHistory" class="clear-history">Hapus Riwayat</button>
+        </div>
+
+        <!-- Credit -->
+        <p class="credit">Credit @2025 by Muh Amin Arsyad <br>
+        0xshizukairdrop • Punggawa Airdrop</p>
+    </div><br>
+    
+
+    <h3 class="ikuti">Sosial Media Saya</h3>
+<!-- Animasi Gambar Kripto -->
+<div class="crypto-animation">
+ 
+    <a href="https://www.facebook.com/share/1FBkdmYoy2/" target="_blank">
+        <img src="Facebook.png" alt="Facebook" class="crypto-icon Facebook">
+    </a>
+    <a href="https://www.instagram.com/amiiinarsyd?igsh=MTNkY2NxMWtwYmR4aw==" target="_blank">
+        <img src="Instagram.png" alt="Instagram" class="crypto-icon Instagram">
+    </a>
+    <a href="https://t.me/punggawairdrop" target="_blank">
+        <img src="Telegram.png" alt="telegram" class="crypto-icon telegram">
+    </a>
+    
+        <a href="https://x.com/0xshizukairdrop?t=sEPWywyQPYveT8YsYU9m4g&s=09" target="_blank">
+        <img src="X.png" alt="x" class="crypto-icon x">
+    </a>
+    
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

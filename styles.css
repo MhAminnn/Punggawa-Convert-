@@ -1,0 +1,245 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1A1A1C, #2575fc);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* Gaya Animasi */
+.crypto-animation {
+    position: relative;
+    height: 110px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.crypto-icon {
+    width: 65px;
+    height: 65px;
+    animation: float 4s infinite;
+}
+
+.crypto-iicon {
+    width: auto;
+    height: 180px;
+    animation: float 4s infinite;
+}
+
+.logoutama {
+  
+}
+
+.instagram {
+    animation-delay: 0s;
+    
+}
+
+.facebook {
+    animation-delay: 1s;
+}
+
+.telegram {
+    animation-delay: 2s;
+}
+
+/* Animasi Melayang */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* Judul Utama */
+.main-title {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #E1E3F5;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Kotak Container */
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 350px;
+    color: #333;
+    margin: 0 auto;
+}
+
+/* Judul Konversi */
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #232324;
+    
+}
+
+/* Garis Pemisah */
+hr {
+    border: 0;
+    height: 1px;
+    background: #d1d1d1;
+    margin-bottom: 20px;
+}
+
+/* Label Input */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Input dan Tombol */
+input[type="text"], input[type="number"], select, button {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Kotak Pencarian dan Daftar Kripto */
+.search-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.crypto-list {
+    position: absolute;
+    width: 100%;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    margin-top: 5px;
+    display: none;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.crypto-list div {
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.crypto-list div:hover {
+    background-color: #f0f2f5;
+}
+
+.ikuti {
+  text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #E1E3F5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Hasil Konversi */
+#result {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #007bff;
+}
+
+/* Loading State */
+.loading {
+    text-align: center;
+    font-style: italic;
+    color: #555;
+}
+
+/* Gaya untuk Credit */
+.credit {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #555;
+    font-style: italic;
+}
+
+/* Tombol Hapus Riwayat */
+.clear-history {
+    background-color: #ff4d4d;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.clear-history:hover {
+    background-color: #cc0000;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .main-title {
+        font-size: 2.2rem;
+    }
+
+    .container {
+        padding: 15px;
+        max-width: 300px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    input[type="text"], input[type="number"], select, button {
+        font-size: 12px;
+        height: 40px;
+    }
+
+    #result {
+        font-size: 15px;
+    }
+}

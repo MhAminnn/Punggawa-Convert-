@@ -1,79 +1,41 @@
 const cryptoList = [
-    "dogecoin", "shiba-inu", "pepe", "floki-inu", "baby-doge-coin",
-"dogelon-mars", "safemoon", "kishu-inu", "elon-doge-token", "hoge-finance",
-"akita-inu", "shiba-predator", "shibacock", "shibapup", "tether", "usd-coin", "binance-usd", "dai", "true-usd",
-"paxos-standard", "frax", "tether-gold", "pax-gold", "liquity-usd",
-"fei-usd", "rai", "reserve-rights-token", "husd", "usdk",
-"usdx", "tusd", "gusd", "usdp", "usdd",
-"eurs", "stasis-euro", "terrausd", "neutrino", "nusd",
-"mimatic", "alusd", "flex-usd", "chainlink", "filecoin", "the-graph", "arweave", "livepeer",
-"helium", "audius", "storj", "akash-network", "theta-token",
-"basic-attention-token", "siacoin", "ocean-protocol", "numeraire", "dock",
-"orchid", "keep-network", "nucypher", "api3", "band-protocol",
-"tellor", "dia-data", "uma", "nest-protocol", "decentraland", "the-sandbox", "axie-infinity", "gala", "render-token",
-"highstreet", "somnium-space-cubes", "bloktopia", "star-atlas", "alien-worlds",
-"my-neighbor-alice", "illuvium", "treeverse", "cradles", "realm",
-"ufo-gaming", "guildfi", "nft-worlds", "voxels", "cryptovoxels",
-"superworld", "netvrk", "metahero", "sipher", "boson-protocol",
-"wilder-world", "tcgcoin", "monaverse", "oncyber", "ovr",
-"earth2", "matrix-ai-network", "hifi-finance", "hunt-token", "mobox",
-"radio-caca", "calo-app", "virtua", "revv", "racefi",
-"playcent", "playdapp", "wizarre-scroll", "polychain-monsters", "my-defi-pet", "enjincoin", "flow", "immutable-x", "chiliz", "theta-token",
-"decentraland", "the-sandbox", "axie-infinity", "gala", "render-token",
-"wax", "superrare", "rarible", "bloktopia", "starlink",
-"my-neighbor-alice", "illuvium", "alien-worlds", "star-atlas", "somnium-space-cubes",
-"highstreet", "ufo-gaming", "guildfi", "treeverse", "cradles",
-"realm", "nftx", "fractionalized-smb", "fractionalized-bored-ape", "fractionalized-crypto-punks",
-"async-art", "nifty-gateway", "foundation", "zora", "mintable",
-"opensea", "looksrare", "x2y2", "sudoswap", "blur",
-"art-blocks", "crypto-kitties", "crypto-punks", "bored-ape-yacht-club", "meebits",
-"cool-cats", "world-of-women", "doodles", "clonex", "azuki",
-"mfers", "loot", "parallel-alpha", "veefriends", "cryptovoxels",
-"decentral-games", "nftfi", "nft20", "nft21", "nft22", "uniswap", "aave", "maker", "compound-governance-token", "sushi",
-"curve-dao-token", "pancakeswap-token", "yearn-finance", "balancer", "convex-finance",
-"synthetix-network-token", "compound-ether", "instadapp", "badger-dao", "renbtc",
-"uma", "kyber-network", "bancor", "0x", "dforce-token",
-"harvest-finance", "cream-2", "alpha-finance-lab", "inverse-finance", "alchemix",
-"spell-token", "abracadabra-money", "anchor-protocol", "lido-dao", "stake-dao",
-"frax-share", "olympus", "tokemak", "ribbon-finance", "index-cooperative",
-"barnbridge", "enzyme-finance", "reflexer-ungovernance-token", "ampleforth", "keep-network",
-"nucypher", "api3", "dopex", "opyn", "hegic",
-"perpetual-protocol", "dhedge-dao", "powerpool", "pickle-finance", "akropolis",
-"bzx-protocol", "kleros", "augur", "gnosis", "airswap",
-"request-network", "idex", "deversifi", "paraswap", "1inch",
-"matcha", "dodo", "apeswap-finance", "autofarm", "beefy-finance",
-"pancakebunny", "venus", "alpaca-finance", "valas-finance", "acryptos",
-"belt-finance", "ellipsis", "wault-finance", "kava-lend", "arbitrum", "optimism", "matic-network", "loopring", "immutable-x",
-"skale", "boba-network", "metis-andromeda", "dydx", "starknet",
-"zksync", "aztec", "hermez", "omg-network", "celer-network",
-"moonbeam", "moonriver", "astar", "shiden", "plasm",
-"cartesi", "matter-labs", "fuel-network", "bitcoin", "ethereum", "solana", "cardano", "avalanche-2",
-"polkadot", "cosmos", "binancecoin", "tron", "algorand",
-"near", "tezos", "flow", "elrond-erd-2", "harmony",
-"icon", "zilliqa", "waves", "kadena", "thorchain",
-"fantom", "celo", "kava", "neo", "eos",
-"qtum", "ontology", "nervos-network", "vechain", "iotex",
-"syscoin", "wanchain", "aion", "ark", "nuls",
-"gochain", "zcoin", "komodo", "ergo", "constellation-labs",
-"radix", "oasis-network", "mina-protocol", "conflux-token", "hydra",
-"ultra", "reef", "sora", "mixin", "nimiq",
-"proton", "telos", "wax", "steem", "hive",
-"bitshares", "lisk", "ardor", "nxt", "stratis",
-"factom", "emercoin", "reddcoin", "gamecredits", "peercoin",
-"namecoin", "feathercoin", "novacoin", "primecoin", "clam",
-"gridcoin", "burst", "potcoin", "curecoin", "vericoin",
-"monacoin", "rubycoin", "bitcoin-sv", "bitcoin-gold", "bitcoin-diamond",
-"bitcoin-private", "bitcoin-cash-abc", "bitcoin-cash-sv", "bitcoin-atom", "bitcoin-zero",
-"bitcoin-interest", "bitcoin-true", "bitcoin-god", "bitcoin-file", "bitcoin-scrypt",
-"bitcoin-2", "bitcoin-fast", "bitcoin-lite", "bitcoin-ultra", "bitcoin-x",
-"bitcoin-y", "bitcoin-z", "bitcoin-alpha", "bitcoin-beta", "bitcoin-gamma",
-"bitcoin-delta", "bitcoin-epsilon", "bitcoin-zeta", "bitcoin-eta", "bitcoin-theta",
-"bitcoin-iota", "bitcoin-kappa", "bitcoin-lambda", "bitcoin-mu", "bitcoin-nu",
-"bitcoin-xi", "bitcoin-omicron", "bitcoin-pi", "bitcoin-rho", "bitcoin-sigma",
-"bitcoin-tau", "bitcoin-upsilon", "bitcoin-phi", "bitcoin-chi", "bitcoin-psi",
-"bitcoin-omega"
+    "bitcoin", "ethereum", "binancecoin", "tether", "usd-coin", "ripple", "cardano", "solana", "polkadot", "dogecoin",
+    "shiba-inu", "terra-luna", "avalanche-2", "uniswap", "litecoin", "chainlink", "stellar", "vechain", "tron", "monero",
+    "algorand", "cosmos", "tezos", "neo", "eos", "qtum", "ontology", "nervos-network", "iotex", "syscoin", "wanchain",
+    "aion", "ark", "nuls", "gochain", "zcoin", "komodo", "ergo", "constellation-labs", "radix", "oasis-network", "mina-protocol",
+    "conflux-token", "hydra", "ultra", "reef", "sora", "mixin", "nimiq", "proton", "telos", "steem", "hive", "bitshares",
+    "lisk", "ardor", "nxt", "stratis", "factom", "emercoin", "reddcoin", "gamecredits", "peercoin", "namecoin", "feathercoin",
+    "novacoin", "primecoin", "clam", "gridcoin", "burst", "potcoin", "curecoin", "vericoin", "monacoin", "rubycoin",
+    
+    // EVM-based projects
+    "polygon", "arbitrum", "optimism", "avalanche-2", "fantom", "moonbeam", "moonriver", "celo", "kava", "harmony",
+    "boba-network", "zkSync", "loopring", "skale", "starknet", "base", "mantlenetwork", "scroll", "metis-andromeda",
+
+    // Layer 1 solutions
+    "near", "elrond", "solana", "cardano", "polkadot", "cosmos", "algorand", "tezos", "harmony", "flow", "vechain",
+    "sui", "aptos", "zkSync", "optimism", "phantom", "terra",
+
+    // DeFi
+    "maker", "aave", "compound-governance-token", "sushi", "curve-dao-token", "pancakeswap-token", "yearn-finance",
+    "balancer", "convex-finance", "synthetix", "uniswap", "1inch", "venus", "alpha-finance-lab", "badger-dao", "renbtc",
+
+    // Meme Coins
+    "dogecoin", "shiba-inu", "floki-inu", "baby-doge-coin", "dogelon-mars", "safemoon", "kishu-inu", "elon-doge-token",
+
+    // Metaverse & Web3 projects
+    "decentraland", "the-sandbox", "axie-infinity", "gala", "render-token", "highstreet", "somnium-space-cubes", "blokkia",
+    "alien-worlds", "my-neighbor-alice", "illuvium", "treeverse", "realm", "ufo-gaming", "nft-worlds", "voxels", "cryptovoxels", 
+    "superworld", "netvrk", "metahero", "boson-protocol", "wilder-world", "tcgcoin", "monaverse", "oncyber", "ovr", "earth2",
+
+    // AI-based tokens
+    "fetch-ai", "numeraire", "singularitynet", "matrix-ai-network", "syntropy", "velas", "ocean-protocol", "openai-token",
+
+    // Additional tokens requested
+    "jupiter", "bitget-token", "vana", "manta-network"
 ];
 
+// Remove duplicates
+const uniqueCryptoList = [...new Set(cryptoList)];
 let selectedCrypto = null;
 let history = JSON.parse(localStorage.getItem('conversionHistory')) || [];
 
